@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorZuPos"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_all_layout"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/lblPass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LÜTEFEN BEKLEYİNİZ"
+                android:textColor="@color/colorZuPos"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ActivePanel"
+            android:layout_width="match_parent"
+            android:layout_height="713dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/back_all_layout"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="6dp"
+                android:text="V1.0.0.0"
+                android:textColor="@color/colorZuPos"
+                android:textSize="8sp" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="75dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    app:srcCompat="@mipmap/zupos_logo_login" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblDeviceSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Boyut : "
+                            android:textColor="@color/colorZuPos"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio5Inc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="5Inch"
+                            android:textColor="@color/colorZuPos"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio8Inc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="8Inch"
+                            android:textColor="@color/colorZuPos"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/lblIP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="IP"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ipText"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="192.168.1.100"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="DB"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/dbNameText"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="Tekirdagkoftecisi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/textView161"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="KULLANİCİ ADİ"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/userNameText"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="sa"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/textView162"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="ŞİFRE"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/passwordText"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/back"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:singleLine="false"
+                        android:text="12345"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorZuPos"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/SaveButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/back_button"
+                    android:text="KAYDET"
+                    android:textColor="@color/colorZuPos"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/vazgecButton"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/back_button"
+                    android:text="VAZGEÇ"
+                    android:textColor="@color/colorZuPos"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

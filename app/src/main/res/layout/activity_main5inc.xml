@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorZuPos"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_all_layout"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/lblPass1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LÜTEFEN BEKLEYİNİZ"
+                android:textStyle="bold"
+                android:textColor="@color/colorZuPos"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ActivePanel"
+        android:layout_width="match_parent"
+        android:layout_height="713dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/back_all_layout"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:srcCompat="@mipmap/zupos_logo_login" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ŞİFRE"
+                    android:textColor="@color/colorZuPos"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/PassText"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/back"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorZuPos"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back_button"
+                android:text="GİRİŞ"
+                android:textColor="@color/colorZuPos"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/SettingButton"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_margin="50dp"
+            android:background="@drawable/back_button"
+            android:text="AYARLAR"
+            android:textColor="@color/colorZuPos"
+            android:textSize="14sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

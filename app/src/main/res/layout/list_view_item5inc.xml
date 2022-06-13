@@ -1,0 +1,41 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/back_menu_icerik_list"
+        android:gravity="center|right"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center|left"
+            android:layout_margin="1dp"
+            android:paddingTop="2dp"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/back_list_item_count"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorBlack"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </TableRow>
+</TableLayout>
